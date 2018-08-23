@@ -16,7 +16,7 @@ class Project
   #adds the specific instance of Project to the backer's @backed_projects array
   def add_backer(backer)
     @backers << backer unless @backers.include?(backer)
-    backer.back_project(self)
-
+    # unless @backers.include?(backer)
+    backer.back_project(self) unless @backers.include?(backer)
   end
 end
