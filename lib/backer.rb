@@ -20,8 +20,9 @@ class Backer
   #@backed_projects array, and also adds the backer to the project's array of backers
   def back_project(project)
     # binding.pry
-    @backed_projects << project
-    project.add_backer(self) unless project.backers.include?(self)
+    @backed_projects << project unless @backed_projects.include?(self)
+    project.add_backer(self)
+    # unless project.backers.include?(self)
     # @backed_projects << project
   end
 end
