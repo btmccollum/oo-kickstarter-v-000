@@ -9,7 +9,7 @@ class Backer
     # binding.pry
     @name = name
     @backed_projects = []
-    BACKER << self
+    # BACKER << self
   end
 
 
