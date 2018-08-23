@@ -2,6 +2,7 @@ require 'pry'
 class Backer
 
   attr_accessor :name
+  attr_reader :backed_projects
 
   def initialize(name)
     # binding.pry
@@ -14,5 +15,7 @@ class Backer
     # self.project.backers << self
     @backed_projects << project
   end
+
+  
 
 end
