@@ -14,6 +14,8 @@ class Backer
   #accepts a Project as an argument and stores it in a backed projects array
   def back_project(project)
     @backed_projects << project
+    # self.backed_projects.each {|project_name| project_name.add_backer(self)}
+    project.add_backer(self)
   end
 
 
