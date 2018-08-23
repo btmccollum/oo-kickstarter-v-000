@@ -8,16 +8,15 @@ class Project
     @backers = []
   end
 
-  def backers
-    @backers
-  end
+  # def backers
+  #   @backers
+  # end
 
-  #it adds a specified instance of Backer to its @backers array and also
-  #adds the specific instance of Project to the backer's @backed_projects array
+  #it accepts an argument of a specific instance of Backer and adds this project
+  #to that backers array of backed project if it's not already present, and then 
+  #adds the backer to the project's @backers array
   def add_backer(backer)
     backer.back_project(self) unless backer.backed_projects.include?(self)
     @backers << backer
-    # unless @backers.include?(backer)
-
   end
 end

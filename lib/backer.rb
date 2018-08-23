@@ -15,6 +15,6 @@ class Backer
   #@backed_projects array, and also adds the backer to the project's array of backers
   def back_project(project)
     project.add_backer(self) unless @backed_projects.include?(project)
-    @backed_projects << project 
+    @backed_projects << project
   end
 end
