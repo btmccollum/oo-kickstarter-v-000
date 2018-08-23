@@ -10,6 +10,7 @@ class Backer
     @name = name
     @backed_projects = []
     # BACKER << self
+    self
   end
 
 
