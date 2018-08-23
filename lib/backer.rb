@@ -11,9 +11,9 @@ class Backer
     @backed_projects = []
   end
 
-  def backed_projects
-    @backed_projects
-  end
+  # def backed_projects
+  #   @backed_projects
+  # end
 
 
   #accepts a Project as an argument and stores it in the Backer instance's
