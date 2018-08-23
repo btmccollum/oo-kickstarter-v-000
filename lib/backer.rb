@@ -4,6 +4,7 @@ class Backer
   attr_accessor :name
   attr_reader :backed_projects
 
+  #it creates a new instance of Backer with a given name, and an empty array of backed projects
   def initialize(name)
     # binding.pry
     @name = name
@@ -12,7 +13,6 @@ class Backer
 
   #accepts a Project as an argument and stores it in a backed projects array
   def back_project(project)
-    # self.project.backers << self
     @backed_projects << project
   end
 
