@@ -14,7 +14,7 @@ class Backer
   #accepts a Project as an argument and stores it in the Backer instance's
   #@backed_projects array, and also adds the backer to the project's array of backers
   def back_project(project)
-    @backed_projects << project unless @backed_projects.includes?(project)
+    @backed_projects << project unless @backed_projects.include?(project)
     project.add_backer(self)
   end
 end
