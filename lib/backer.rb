@@ -1,5 +1,5 @@
 require 'pry'
-class Backer -
+class Backer
 
   attr_accessor :name
 
